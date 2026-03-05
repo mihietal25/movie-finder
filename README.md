@@ -58,12 +58,13 @@ https://www.omdbapi.com/apikey.aspx
 
 js/config.js
 
-4. Add your API key:
-
-```javascript
-export const OMDB_API_KEY = "YOUR_API_KEY";
+4. Add your API key
 
 5. Open index.html in your browser
+
+
+
+
 
 
 
