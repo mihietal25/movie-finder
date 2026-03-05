@@ -8,9 +8,15 @@ document.addEventListener("DOMContentLoaded", async () => {
   const plotEl = document.getElementById("plot");
   const favBtn = document.getElementById("favBtn");
   const imdbLink = document.getElementById("imdbLink");
+  const backLink = document.getElementById("backLink");
 
   const params = new URLSearchParams(window.location.search);
   const imdbID = params.get("id");
+  const query = params.get("q");
+  const page = params.get("page");
+  if (query) {
+  backLink.href = `search.html?q=${query}&page=${page || 1}`;
+}
 
   if (!imdbID) {
     titleEl.textContent = "No movie selected";
